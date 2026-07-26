@@ -26,9 +26,11 @@ h2 {
 .container {
     width: 90%;
     max-width: 1250px;
+    /* min-width: 500px; */
     margin: 0 auto;;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 /* HEADER SECTION */
@@ -57,4 +59,38 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 5px 100px 50px 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 150px;
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 150px;
+    min-height: 150px;
+    height: auto;
+    min-width: 150px;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.main-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.card p {
+    margin-top: 10px;
+    overflow-wrap: break-word;
 }
