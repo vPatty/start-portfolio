@@ -51,10 +51,16 @@ h2 {
     gap: 10px;
 }
 
-/* MAIN SECTION */
+/* MAIN CONTENT SECTION */
 .main-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* INFO SECTION */
+.info-section {
     padding: 20px 0px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,7 +87,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.main-section-cards {
+.info-section-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -94,3 +100,24 @@ h2 {
     margin-top: 10px;
     overflow-wrap: break-word;
 }
+
+/* QUOTE SECTION */
+.quote-section {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+}
+
+.quote-section p {
+    text-align: center;
+}
+
+#quote-author {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
